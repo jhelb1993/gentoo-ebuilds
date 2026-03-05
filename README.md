@@ -13,7 +13,7 @@ sudo git clone https://github.com/jhelb1993/jhelb1993-gentoo-ebuilds /var/db/rep
 
 sudo mkdir -p /etc/portage/repos.conf
 sudo tee /etc/portage/repos.conf/jhelb1993-gentoo-ebuilds.conf >/dev/null <<'EOF'
-[gentoo-ebuilds]
+[jhelb1993-gentoo-ebuilds]
 location = /var/db/repos/jhelb1993-gentoo-ebuilds
 masters = gentoo
 auto-sync = no
