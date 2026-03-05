@@ -1,0 +1,13 @@
+diff --git a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999_build/data/fonts/src/CMakeLists.txt b/data/fonts/src/CMakeLists.txt
+index e07b24c73..8869714a0 100644
+--- a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999_build/data/fonts/src/CMakeLists.txt
++++ b/data/fonts/src/CMakeLists.txt
+@@ -9,7 +9,7 @@ SET(FILES
+     LiberationMono-Regular.sfd
+     LiberationSans-Bold.sfd
+     LiberationSans-Regular.sfd
+-    into.txt
++    info.txt
+     )
+ 
+ INSTALL(FILES ${FILES} DESTINATION ${DATA_DIR}/fonts/src)

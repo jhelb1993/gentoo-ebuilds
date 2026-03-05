@@ -1,0 +1,32 @@
+diff --git a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/src/utils/dumplibs.cpp b/src/utils/dumplibs.cpp
+index 4215d61..886701a 100644
+--- a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/src/utils/dumplibs.cpp
++++ b/src/utils/dumplibs.cpp
+@@ -1,5 +1,5 @@
+ /*
+- *  The ManaPlus Client
++ *  The ManaPlus ClientxmlParserVersion
+  *  Copyright (C) 2017-2019  The ManaPlus Developers
+  *  Copyright (C) 2019-2022  Andrei Karas
+  *
+@@ -140,9 +140,9 @@ void dumpLibs()
+     LIBXML_TEST_VERSION
+ #endif  // LIBXML_TEST_VERSION
+ #ifdef ENABLE_LIBXML
+-    const char **xmlVersion = __xmlParserVersion();
++    const char *xmlVersion = xmlParserVersion;
+     if (xmlVersion != nullptr)
+-        logger->log(" libxml2: %s", *xmlVersion);
++        logger->log(" libxml2: %s", xmlVersion);
+ #endif  // ENABLE_LIBXML
+ #ifdef USE_SDL2
+     SDL_version sdlVersion;
+@@ -165,7 +165,7 @@ void dumpLibs()
+     {
+         compareVersions("libxml2",
+             LIBXML_VERSION_STRING LIBXML_VERSION_EXTRA,
+-            *xmlVersion);
++            xmlVersion);
+     }
+ #endif  // ENABLE_LIBXML
+ #ifdef USE_SDL2

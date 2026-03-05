@@ -1,0 +1,14 @@
+diff --git a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/src/resources/wallpaper.cpp b/src/resources/wallpaper.cpp
+index 2df412b..8a919c4 100644
+--- a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/src/resources/wallpaper.cpp
++++ b/src/resources/wallpaper.cpp
+@@ -39,9 +39,7 @@
+ #include <sys/time.h>
+ #endif  // WIN32
+ 
+-#ifdef __clang__
+ #include <ctime>
+-#endif  // __clang__
+ 
+ #include "debug.h"
+ 

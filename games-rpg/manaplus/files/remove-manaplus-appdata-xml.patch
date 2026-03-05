@@ -1,0 +1,13 @@
+diff --git a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/CMakeLists.txt b/CMakeLists.txt
+index 45a1e156c..c3ee3161e 100644
+--- a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -56,8 +56,6 @@ ENDIF()
+ If(UNIX)
+     INSTALL(FILES manaplus.desktop DESTINATION share/applications)
+     INSTALL(FILES manaplustest.desktop DESTINATION share/applications)
+-
+-    INSTALL(FILES manaplus.appdata.xml DESTINATION share/appdata)
+ ENDIF()
+ 
+ SET(CPACK_PACKAGE_NAME "manaplus")

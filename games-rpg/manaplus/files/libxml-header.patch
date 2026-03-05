@@ -1,0 +1,14 @@
+diff --git a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/src/utils/xml/libxml.cpp b/src/utils/xml/libxml.cpp
+index fe45be0..2f7e004 100644
+--- a/var/tmp/portage/games-rpg/manaplus-9999/work/manaplus-9999/src/utils/xml/libxml.cpp
++++ b/src/utils/xml/libxml.cpp
+@@ -38,6 +38,9 @@
+ 
+ #include "debug.h"
+ 
++#include <libxml/parser.h>
++#include <libxml/xmlreader.h>
++
+ namespace
+ {
+     bool valid = false;
